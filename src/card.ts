@@ -53,7 +53,7 @@ export function createCard(card: Card): Node {
       backgroundColor: "oklch(0.2279 0.0102 259.81)",
       backgroundImage: "linear-gradient(180deg in oklch, oklch(0.2279 0.0102 259.81), oklch(62.3% 0.214 259.815))",
       color: "#fff",
-      fontFamily: "Inter",
+      fontFamily: "Inter, Noto Sans SC",
       fontOpticalSizing: "auto",
       fontWeight: 400,
     },

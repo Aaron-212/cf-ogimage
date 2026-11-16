@@ -2,6 +2,7 @@ import inter from "@fontsource-variable/inter/files/inter-latin-opsz-normal.woff
 import init, { Renderer } from "@takumi-rs/wasm";
 import wasm from "@takumi-rs/wasm/auto";
 import { createCard, type Card } from "./card";
+import { notoSansSC } from "./fonts";
 
 export type ImageFormat = "png" | "webp" | "jpeg";
 
@@ -18,5 +19,11 @@ function getRenderer(): Promise<Renderer> {
 
 export async function renderImage(card: Card, format: ImageFormat): Promise<Uint8Array> {
   const instance = await getRenderer();
-  return instance.render(createCard(card), { width: 1200, height: 630, format });
+  return instance.render(createCard(card), {
+    width: 1200,
+    height: 630,
+    format,
+    fonts: notoSansSC,
+    fontFamilies: ["Inter", "Noto Sans SC"],
+  });
 }
