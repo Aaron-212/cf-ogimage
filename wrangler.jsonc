@@ -6,4 +6,6 @@
   "previews": {},
   "vars": { "IMAGE_CACHE_ENABLED": "true" },
   "rules": [{ "type": "Data", "globs": ["**/*.woff2"], "fallthrough": true }],
+  "workers_dev": false,
+  "preview_urls": false,
 }
