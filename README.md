@@ -30,6 +30,11 @@ Use these optional query parameters:
 Values are trimmed. Empty values, duplicate parameters, and unknown parameters return HTTP 400.
 The endpoint accepts GET and HEAD requests. HEAD follows the same render/cache path but returns no body.
 
+Browser CORS requests are allowed from HTTP or HTTPS origins on `aaron212.com`, its subdomains, `localhost`, and `127.0.0.1`,
+on any port. Other `Origin` values, including `null`, return HTTP 403.
+Requests without an `Origin` header remain available for direct links and social preview crawlers.
+OPTIONS preflights allow GET and HEAD with the `Content-Type` request header.
+
 For example, request a card with a title and site label:
 
 ```text
