@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cf-ogimage",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-16",
+  "previews": {},
+  "vars": { "IMAGE_CACHE_ENABLED": "true" },
+  "rules": [{ "type": "Data", "globs": ["**/*.woff2"], "fallthrough": true }],
+}
