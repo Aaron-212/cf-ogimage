@@ -17,6 +17,9 @@ importers:
       '@takumi-rs/wasm':
         specifier: ^2.20.0
         version: 2.20.0(csstype@3.2.3)
+      pangu:
+        specifier: 10.4.1
+        version: 10.4.1
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^5.20261115.1
@@ -896,6 +899,11 @@ packages:
       vite-plus:
         optional: true
 
+  pangu@10.4.1:
+    resolution: {integrity: sha512-A1Mpma8C6ahlEB+kd+jzAwB4QkETo669TafCnwlWi2V3ZrxuWfPTgdqcivliznx8Mtq+1z6vQolE0bkXKVoPRA==}
+    engines: {node: '>=20.0.0'}
+    hasBin: true
+
   path-to-regexp@6.3.0:
     resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
 
@@ -1508,6 +1516,8 @@ snapshots:
       '@oxlint/binding-win32-arm64-msvc': 1.93.0
       '@oxlint/binding-win32-ia32-msvc': 1.93.0
       '@oxlint/binding-win32-x64-msvc': 1.93.0
+
+  pangu@10.4.1: {}
 
   path-to-regexp@6.3.0: {}
 

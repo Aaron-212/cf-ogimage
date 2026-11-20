@@ -1,4 +1,5 @@
 import type { Node } from "@takumi-rs/wasm";
+import pangu from "pangu/shared";
 
 export interface Card {
   title: string;
@@ -38,7 +39,7 @@ export function parseCard(params: URLSearchParams): Card {
 
 function block(style: NonNullable<Node["style"]>, children: Node[] | string): Node {
   return typeof children === "string"
-    ? { type: "text", text: children, style }
+    ? { type: "text", text: pangu.spaceText(children), style }
     : { type: "container", style: { display: "flex", ...style }, children };
 }
 
